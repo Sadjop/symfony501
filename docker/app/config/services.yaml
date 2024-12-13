@@ -19,6 +19,8 @@ services:
             - '../src/DependencyInjection/'
             - '../src/Entity/'
             - '../src/Kernel.php'
-
+    App\Service\Predictor:
+        arguments:
+            $modelPath: '%kernel.project_dir%/public/models/random_forest_model.rbx' # Remplacez par le chemin réel de votre modèle
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
