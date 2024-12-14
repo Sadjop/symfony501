@@ -4,6 +4,7 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
+    model_path: '%kernel.project_dir%/public/models'
 
 services:
     # default configuration for services in *this* file
@@ -21,6 +22,4 @@ services:
             - '../src/Kernel.php'
     App\Service\Predictor:
         arguments:
-            $modelPath: '%kernel.project_dir%/public/models/random_forest_model.rbx' # Remplacez par le chemin réel de votre modèle
-    # add more service definitions when explicit configuration is needed
-    # please note that last definitions always *replace* previous ones
+            $modelPath: '%model_path%'

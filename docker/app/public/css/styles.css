@@ -1,30 +1,204 @@
 /* public/css/styles.css */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: #f4f8f2;
+    font-family: 'Arial', sans-serif;
     color: #333;
-    margin: 0;
-    padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+.hero {
     text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #66bb6a, #43a047);
+    color: white;
 }
 
-main {
-    padding: 20px;
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.btn-primary {
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    background-color: #43a047;
+    border: 2px solid #fff;
+}
+
+.btn-primary:hover {
+    background-color: #66bb6a;
+    transition: background-color 0.3s;
+    border: 2px solid rgb(216, 249, 191);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #388e3c;
+}
+
+.content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.content a {
+    font-size: 1.1rem;
+    color: #388e3c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.content a:hover {
+    text-decoration: underline;
+    color: #66bb6a;
 }
 
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
+    padding: 2rem;
+    background-color: #43a047;
+    color: white;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+.result-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.result-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #388e3c;
+}
+
+.result-container p {
+    font-size: 1.2rem;
+    color: #343a40;
+}
+
+.result-container .prediction {
+    font-weight: bold;
+    color: #43a047;
+}
+
+.result-container .btn {
+    margin-top: 20px;
+    background: #43a047;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.result-container .btn:hover {
+    background: #66bb6a;
+}
+
+.result-container .btn-secondary {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #388e3c;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #388e3c;
+}
+
+.result-container .btn-secondary:hover {
+    text-decoration: none;
+    color: #66bb6a;
+    border: 2px solid #66bb6a;
+    background-color: transparent;
+}
+
+.upload-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.upload-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #388e3c;
+}
+
+.upload-container p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.upload-container input[type="file"] {
+    margin: 20px 0;
+    font-size: 1rem;
     padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.upload-container select {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.upload-container button {
+    background: #43a047;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.upload-container button:hover {
+    background: #66bb6a;
+}
+
+.upload-container .btn-secondary {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #388e3c;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #388e3c;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.upload-container .btn-secondary:hover {
+    text-decoration: none;
+    color: #66bb6a;
+    border: 2px solid #66bb6a;
+    background-color: transparent;
 }

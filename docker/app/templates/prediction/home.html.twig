@@ -1,0 +1,45 @@
+{# templates/base.html.twig #}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue sur le projet de prédiction</title>
+
+    {# Inclusion de Bootstrap via CDN #}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    {# Inclusion du fichier CSS personnalisé #}
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <h1>Bienvenue sur le projet de prédiction d'images</h1>
+        <p>Ce projet est réalisé dans le cadre de la SAE 501. Il utilise des modèles d'IA pour classer les images en ligne.</p>
+        <a href="{{ path('predict') }}" class="btn btn-primary">Tester avec une image</a>
+    </header>
+
+    <div class="content">
+        <h2>À propos du projet</h2>
+        <p>
+            Ce projet utilise des modèles d'apprentissage automatique avancés pour analyser des images et déterminer leur catégorie. Il est construit avec Symfony et Rubix ML, et permet la classification d'images en ligne. 
+            Le modèle d'IA analyse l'image téléchargée, puis une page affiche la classe de l'image.
+        </p>
+        <p>
+            Le projet a été réalisé par Arthur MAISON et Arthur ROBERT. Les modèles utilisés pour la classification sont le MLP (Multi-Layer Perceptron) et un modèle Random Forest Classification Tree. 
+            Vous pouvez voir plus de détails sur les modèles dans les dépôts GitHub :
+            <br><br>
+            <a href="https://github.com/Sadjop/symfony501" target="_blank">Symfony501 Repository</a> <br>
+            <a href="https://github.com/Sadjop/rubixml" target="_blank">Rubix ML Repository</a>
+        </p>
+        <p>
+            Lors de l'entraînement du modèle Random Forest, un traitement en multiprocesseur est utilisé pour améliorer les performances.
+        </p>
+    </div>
+
+    <footer>
+        <p>Projet réalisé par Arthur Maison et Arthur Robert - SAE 501</p>
+    </footer>
+</body>
+</html>
